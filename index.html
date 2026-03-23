@@ -1,12 +1,114 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my site</title>
+    <title>Emmanuel Kasoma</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            background-color: #f8f9fa;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #212529;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Site</h1>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Emmanuel Kasoma</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <h1 class="display-5">Emmanuel Kasoma</h1>
+        <p class="lead">Computer Engineer | Backend Developer | ICT Support</p>
+        <a href="#projects" class="btn btn-primary mt-3">View Projects</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I am a Computer Engineering graduate with strong experience in software development,
+            hardware systems, and ICT support. I specialize in Python, Django, and system troubleshooting.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section bg-light">
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="row">
+            <div class="col-md-3">Python, Django</div>
+            <div class="col-md-3">PHP, JavaScript</div>
+            <div class="col-md-3">HTML, CSS</div>
+            <div class="col-md-3">Git, Linux, Arduino</div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="mb-4">
+            <h4>Breast Cancer Diagnosis System</h4>
+            <p>Machine learning-based platform for medical image analysis.</p>
+        </div>
+
+        <div>
+            <h4>Solar Panel Tracking System</h4>
+            <p>Arduino-based automated solar tracking solution.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section bg-light">
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p>Email: emmanuelkasoma2016@gmail.com</p>
+        <p>Phone: +256 787 813 138</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Emmanuel Kasoma</p>
+</footer>
+
 </body>
 </html>
