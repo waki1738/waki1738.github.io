@@ -20,12 +20,18 @@
         }
 
         .section {
-            padding: 60px 0;
+            padding: 70px 0;
         }
 
         .section-title {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             font-weight: bold;
+            text-align: center;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
         }
 
         footer {
@@ -33,6 +39,10 @@
             color: white;
             padding: 20px;
             text-align: center;
+        }
+
+        .btn-custom {
+            margin: 5px;
         }
     </style>
 </head>
@@ -50,7 +60,9 @@
     <div class="container">
         <h1 class="display-5">Emmanuel Kasoma</h1>
         <p class="lead">Computer Engineer | Backend Developer | ICT Support</p>
-        <a href="#projects" class="btn btn-primary mt-3">View Projects</a>
+
+        <a href="#projects" class="btn btn-primary btn-custom">View Projects</a>
+        <a href="CV.pdf" class="btn btn-outline-dark btn-custom" download>Download CV</a>
     </div>
 </section>
 
@@ -58,9 +70,10 @@
 <section class="section">
     <div class="container">
         <h2 class="section-title">About Me</h2>
-        <p>
+        <p class="text-center mx-auto" style="max-width: 700px;">
             I am a Computer Engineering graduate with strong experience in software development,
             hardware systems, and ICT support. I specialize in Python, Django, and system troubleshooting.
+            I am passionate about building efficient, technology-driven solutions.
         </p>
     </div>
 </section>
@@ -69,11 +82,37 @@
 <section class="section bg-light">
     <div class="container">
         <h2 class="section-title">Skills</h2>
-        <div class="row">
-            <div class="col-md-3">Python, Django</div>
-            <div class="col-md-3">PHP, JavaScript</div>
-            <div class="col-md-3">HTML, CSS</div>
-            <div class="col-md-3">Git, Linux, Arduino</div>
+
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <div class="card p-3 text-center">
+                    <h5>Backend</h5>
+                    <p>Python, Django, PHP</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card p-3 text-center">
+                    <h5>Frontend</h5>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card p-3 text-center">
+                    <h5>Tools</h5>
+                    <p>Git, GitHub, Linux</p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card p-3 text-center">
+                    <h5>Other</h5>
+                    <p>Arduino, Troubleshooting, Support</p>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -83,25 +122,60 @@
     <div class="container">
         <h2 class="section-title">Projects</h2>
 
-        <div class="mb-4">
-            <h4>Breast Cancer Diagnosis System</h4>
-            <p>Machine learning-based platform for medical image analysis.</p>
-        </div>
+        <div class="row g-4">
 
-        <div>
-            <h4>Solar Panel Tracking System</h4>
-            <p>Arduino-based automated solar tracking solution.</p>
-        </div>
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <h5>Breast Cancer Diagnosis System</h5>
+                    <p>Machine learning-based platform for analyzing medical images and assisting diagnosis.</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">View Project</a>
+                </div>
+            </div>
 
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <h5>Solar Panel Tracking System</h5>
+                    <p>Arduino-based automated system that tracks sunlight to improve solar efficiency.</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">View Project</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section bg-light">
+    <div class="container">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="mx-auto" style="max-width: 800px;">
+
+            <p><strong>Graduate Trainee – Computer Forensics Consultant Uganda</strong><br>
+            ISO certification support</p>
+
+            <p><strong>Onboarding Officer – G-Tris</strong><br>
+            ICT support, troubleshooting mobile applications</p>
+
+            <p><strong>Programming Teacher – Ronro Institute</strong><br>
+            Taught programming and mentored students</p>
+
+            <p><strong>Backend Developer Intern – Yoya Technologies</strong><br>
+            Built Django backend features and testing</p>
+
+        </div>
     </div>
 </section>
 
 <!-- CONTACT -->
-<section class="section bg-light">
-    <div class="container">
+<section class="section">
+    <div class="container text-center">
         <h2 class="section-title">Contact</h2>
+
         <p>Email: emmanuelkasoma2016@gmail.com</p>
         <p>Phone: +256 787 813 138</p>
+
+        <a href="https://github.com/waki1738" class="btn btn-dark">GitHub</a>
     </div>
 </section>
 
